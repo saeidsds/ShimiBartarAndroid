@@ -214,7 +214,14 @@ public class Parser {
                 obj.file_type = jclient.getString("file_type");
             }catch (Exception e){}
 
+            try {
+                obj.slider_type = jclient.getString("slider_type");
+            }catch (Exception e){}
 
+
+            try {
+                obj.slider_post_id = jclient.getString("slider_post_id");
+            }catch (Exception e){}
 
 
             try {

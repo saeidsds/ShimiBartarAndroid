@@ -62,7 +62,15 @@ public class ImageFragment extends Fragment {
 							Intent intent=new Intent(getActivity(), PackageActivity.class);
 							intent.putExtra("data",new Gson().toJson(data));
 							startActivity(intent);
-						}else{
+						}
+						else if(data.slider_type.equals("in_app")){
+							PostObject obj = new PostObject();
+							obj.post_id = data.slider_post_id;
+							Intent intent=new Intent(getActivity(), PackageActivity.class);
+							intent.putExtra("data",new Gson().toJson(obj));
+							startActivity(intent);
+						}
+						else{
 							MultiplatformHelper.open_url(getActivity(),data.link_slider);
 						}
 

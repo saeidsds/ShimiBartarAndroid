@@ -84,4 +84,7 @@ public class PostObject {
     public String offline_parent_title="";
 
 
+    public String slider_type="";
+    public String slider_post_id = "";
+
 }
