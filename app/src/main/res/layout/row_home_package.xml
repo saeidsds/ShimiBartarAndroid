@@ -105,6 +105,20 @@
                         android:textSize="15sp"
                         android:textStyle="bold" />
 
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/price_prev_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="15dp"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="ssss"
+                        android:textColor="@color/material_red"
+                        android:textSize="13sp"
+                        android:textStyle="normal" />
 
                     <androidx.appcompat.widget.AppCompatTextView
                         android:id="@+id/price_tv"

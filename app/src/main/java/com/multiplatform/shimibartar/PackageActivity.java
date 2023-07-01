@@ -612,6 +612,11 @@ public class PackageActivity extends AppCompatActivity {
         ((TextView)findViewById(R.id.toolbar_title_tv)).setSelected(true);
         ((TextView)findViewById(R.id.duration_tv)).setText(data.durations);
         ((TextView)findViewById(R.id.title_tv)).setSelected(true);
+
+        ((TextView)findViewById(R.id.price_prev_tv)).setText(MultiplatformHelper.get_price(data.price_prev)+" "+ctx.getString(R.string.toman));
+        if(data.package_type.equals("free") || data.price_prev.equals("0"))
+            ((TextView)findViewById(R.id.price_prev_tv)).setVisibility(View.GONE);
+
         if(!data.package_type.equals("free"))
             ((TextView)findViewById(R.id.price_tv)).setText(getString(R.string.buy)+"( "+MultiplatformHelper.get_price(data.price)+" "+getString(R.string.toman)+" )");
         if(have_permission)

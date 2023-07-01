@@ -106,13 +106,22 @@ public  class PackageAdapter extends BaseAdapter  {
          viewHolder1.title.setText(mList.get(position).title);
          viewHolder1.title.setSelected(true);
          Glide.with(ctx).load(mList.get(position).image).into(viewHolder1.image);
+         viewHolder1.price_prev_tv.setText(MultiplatformHelper.get_price(mList.get(position).price_prev)+" "+ctx.getString(R.string.toman));
+
 
          if(mList.get(position).package_type.equals("free")) {
              viewHolder1.price_tv.setText(ctx.getString(R.string.free));
              viewHolder1.price_tv.setTextColor(ContextCompat.getColor(ctx,R.color.material_green));
+             viewHolder1.price_prev_tv.setVisibility(View.GONE);
          }else {
              viewHolder1.price_tv.setText(MultiplatformHelper.get_price(mList.get(position).price)+" "+ctx.getString(R.string.toman));
              viewHolder1.price_tv.setTextColor(ContextCompat.getColor(ctx,R.color.material_red));
+
+             if(mList.get(position).price_prev.equals("")){
+                 viewHolder1.price_prev_tv.setVisibility(View.GONE);
+             }else{
+                 viewHolder1.price_prev_tv.setVisibility(View.VISIBLE);
+             }
          }
          return v;
           

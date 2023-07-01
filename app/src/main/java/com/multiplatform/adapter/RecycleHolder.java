@@ -20,6 +20,7 @@ import com.multiplatform.shimibartar.R;
 public  class RecycleHolder extends RecyclerView.ViewHolder  {
     public TextView title;
     public TextView price;
+    public TextView price_prev;
     public TextView item1_tv;
     public ImageView image;
     public CircularProgressView loading_view;
@@ -45,6 +46,7 @@ public  class RecycleHolder extends RecyclerView.ViewHolder  {
         title = (TextView) v.findViewById(R.id.title_tv);
         item1_tv = (TextView) v.findViewById(R.id.item1_tv);
         price = (TextView) v.findViewById(R.id.price_tv);
+        price_prev = (TextView) v.findViewById(R.id.price_prev_tv);
         image = (ImageView) v.findViewById(R.id.image);
         loading_view =  v.findViewById(R.id.loading_view);
         container =  v.findViewById(R.id.container);

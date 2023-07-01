@@ -54,12 +54,20 @@ public class HomePackageAdapter extends RecyclerView.Adapter<RecycleHolder> {
         Glide.with(ctx).load(mList.get(position).image).into(holder.image);
         holder.title.setText(mList.get(position).title);
         holder.title.setSelected(true);
+
+        holder.price_prev.setText(MultiplatformHelper.get_price(mList.get(position).price_prev)+" "+ctx.getString(R.string.toman));
         if(mList.get(position).package_type.equals("free")) {
             holder.price.setText(ctx.getString(R.string.free));
             holder.price.setTextColor(ContextCompat.getColor(ctx,R.color.material_green));
+            holder.price_prev.setVisibility(View.GONE);
         }else {
             holder.price.setText(MultiplatformHelper.get_price(mList.get(position).price)+" "+ctx.getString(R.string.toman));
             holder.price.setTextColor(ContextCompat.getColor(ctx,R.color.material_red));
+            if(mList.get(position).price_prev.equals("")){
+                holder.price_prev.setVisibility(View.GONE);
+            }else{
+                holder.price_prev.setVisibility(View.VISIBLE);
+            }
         }
 
     }

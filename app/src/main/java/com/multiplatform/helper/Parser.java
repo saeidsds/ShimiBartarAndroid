@@ -201,6 +201,10 @@ public class Parser {
                 obj.price = jclient.getString("price");
             }catch (Exception e){}
 
+            try {
+                obj.price_prev = jclient.getString("price_prev");
+            }catch (Exception e){}
+
 
             try {
                 obj.durations = jclient.getString("durations");

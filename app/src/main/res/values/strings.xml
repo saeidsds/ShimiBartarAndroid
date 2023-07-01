@@ -64,8 +64,8 @@
     <string name="download_complete_copy">فایل با موفقیت دانلود گردید</string>
     <string name="profile">حساب کاربری</string>
     <string name="payment_history">تراکنش ها</string>
-    <string name="support">پشتیبانی</string>
-    <string name="support_shimi_bartar">پشتیبانی شیمی برتر</string>
+    <string name="support">دایرکت</string>
+    <string name="support_shimi_bartar">دایرکت شیمی برتر</string>
     <string name="about">درباره ما</string>
     <string name="developer">سازنده اپلیکیشن</string>
     <string name="update_profile">بروزرسانی پروفایل</string>
@@ -93,7 +93,7 @@
  میباشد ، در صورت نیاز به پشتیبانی صرفا از طریق گزینه پشتیبانی در برنامه اقدام نمایید
      </string>
     <string name="developer_continue">ادامه</string>
-    <string name="developer_support">پشتیبانی</string>
+    <string name="developer_support">دایرکت</string>
     <string name="developer_cancel">انصراف</string>
     <string name="day">روز</string>
     <string name="not_active_on_device">برنامه بر روی دستگاه دیگر فعال میباشد</string>
@@ -307,5 +307,5 @@
     <string name="delete_file_desc">آیا میخواهید فایل دانلود شده را از حافظه گوشی همراه خود حذف کنید ؟</string>
 
 
-    <string name="support_list">لیست درخواست های پشتیبانی من</string>
+    <string name="support_list">لیست دایرکت های من</string>
 </resources>

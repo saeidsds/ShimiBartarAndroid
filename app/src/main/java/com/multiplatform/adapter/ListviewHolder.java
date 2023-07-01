@@ -16,6 +16,7 @@ class ListviewHolder {
     public TextView title;
     public TextView title2;
     public TextView price_tv;
+    public TextView price_prev_tv;
     public View comment_container1;
     public View comment_container2;
     public TextView item1_tv;
@@ -35,6 +36,7 @@ class ListviewHolder {
     	 title = (TextView) base.findViewById(R.id.title_tv);
     	 title2 = (TextView) base.findViewById(R.id.title2_tv);
          price_tv = (TextView) base.findViewById(R.id.price_tv);
+         price_prev_tv = (TextView) base.findViewById(R.id.price_prev_tv);
          comment_container1 =  base.findViewById(R.id.comment_container1);
          comment_container2 =  base.findViewById(R.id.comment_container2);
          item1_tv = (TextView) base.findViewById(R.id.item1_tv);
