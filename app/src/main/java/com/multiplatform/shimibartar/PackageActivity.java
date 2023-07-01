@@ -10,6 +10,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
+import android.graphics.Paint;
 import android.graphics.drawable.ColorDrawable;
 import android.net.Uri;
 
@@ -614,7 +615,8 @@ public class PackageActivity extends AppCompatActivity {
         ((TextView)findViewById(R.id.title_tv)).setSelected(true);
 
         ((TextView)findViewById(R.id.price_prev_tv)).setText(MultiplatformHelper.get_price(data.price_prev)+" "+ctx.getString(R.string.toman));
-        if(data.package_type.equals("free") || data.price_prev.equals("0"))
+        ((TextView)findViewById(R.id.price_prev_tv)).setPaintFlags(((TextView)findViewById(R.id.price_prev_tv)).getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG);
+        if(data.package_type.equals("free") || data.price_prev.equals("0")|| data.price_prev.equals(""))
             ((TextView)findViewById(R.id.price_prev_tv)).setVisibility(View.GONE);
 
         if(!data.package_type.equals("free"))

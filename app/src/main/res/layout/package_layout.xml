@@ -125,7 +125,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginTop="5dp"
                             android:gravity="right"
-                            android:textColor="@color/white"
+                            android:textColor="@color/material_red"
                             android:textSize="14sp"
                             android:textStyle="bold" />
                         <TextView

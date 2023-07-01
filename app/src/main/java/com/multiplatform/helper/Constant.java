@@ -9,7 +9,7 @@ public class Constant {
     private static String site_url = "https://chempic.com/";
     public static String email = "https://info@chempic.com";
     public static String en_app_name = "Shimi Bartar";
-    private static String webservice = "http://chempic.com/shimi_bartar/webservice/";
+    private static String webservice = "https://chempic.com/shimi_bartar/webservice/";
 
     private static String payment_webservice = "https://chempic.com/shimi_bartar/befor-payment/?";
 

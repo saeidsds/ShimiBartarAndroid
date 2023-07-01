@@ -4,6 +4,7 @@ package com.multiplatform.adapter;
 import android.app.Activity;
 import android.content.Context;
 import android.content.SharedPreferences;
+import android.graphics.Paint;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -56,14 +57,16 @@ public class HomePackageAdapter extends RecyclerView.Adapter<RecycleHolder> {
         holder.title.setSelected(true);
 
         holder.price_prev.setText(MultiplatformHelper.get_price(mList.get(position).price_prev)+" "+ctx.getString(R.string.toman));
+        holder.price_prev.setPaintFlags(holder.price_prev.getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG);
+
         if(mList.get(position).package_type.equals("free")) {
             holder.price.setText(ctx.getString(R.string.free));
             holder.price.setTextColor(ContextCompat.getColor(ctx,R.color.material_green));
             holder.price_prev.setVisibility(View.GONE);
         }else {
             holder.price.setText(MultiplatformHelper.get_price(mList.get(position).price)+" "+ctx.getString(R.string.toman));
-            holder.price.setTextColor(ContextCompat.getColor(ctx,R.color.material_red));
-            if(mList.get(position).price_prev.equals("")){
+            holder.price.setTextColor(ContextCompat.getColor(ctx,R.color.material_green));
+            if(mList.get(position).price_prev.equals("") || mList.get(position).price_prev.equals("0")){
                 holder.price_prev.setVisibility(View.GONE);
             }else{
                 holder.price_prev.setVisibility(View.VISIBLE);

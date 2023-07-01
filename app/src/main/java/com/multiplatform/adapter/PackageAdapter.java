@@ -4,11 +4,13 @@ package com.multiplatform.adapter;
 import android.app.Activity;
 import android.content.Context;
 import android.content.SharedPreferences;
+import android.graphics.Paint;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.Filter;
+import android.widget.TextView;
 
 import androidx.core.content.ContextCompat;
 
@@ -107,7 +109,7 @@ public  class PackageAdapter extends BaseAdapter  {
          viewHolder1.title.setSelected(true);
          Glide.with(ctx).load(mList.get(position).image).into(viewHolder1.image);
          viewHolder1.price_prev_tv.setText(MultiplatformHelper.get_price(mList.get(position).price_prev)+" "+ctx.getString(R.string.toman));
-
+         viewHolder1.price_prev_tv.setPaintFlags(viewHolder1.price_prev_tv.getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG);
 
          if(mList.get(position).package_type.equals("free")) {
              viewHolder1.price_tv.setText(ctx.getString(R.string.free));
@@ -115,9 +117,9 @@ public  class PackageAdapter extends BaseAdapter  {
              viewHolder1.price_prev_tv.setVisibility(View.GONE);
          }else {
              viewHolder1.price_tv.setText(MultiplatformHelper.get_price(mList.get(position).price)+" "+ctx.getString(R.string.toman));
-             viewHolder1.price_tv.setTextColor(ContextCompat.getColor(ctx,R.color.material_red));
+             viewHolder1.price_tv.setTextColor(ContextCompat.getColor(ctx,R.color.material_green));
 
-             if(mList.get(position).price_prev.equals("")){
+             if(mList.get(position).price_prev.equals("")  || mList.get(position).price_prev.equals("0")){
                  viewHolder1.price_prev_tv.setVisibility(View.GONE);
              }else{
                  viewHolder1.price_prev_tv.setVisibility(View.VISIBLE);
