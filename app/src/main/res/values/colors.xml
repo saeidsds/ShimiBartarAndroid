@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--    <color name="colorPrimary">#6200EE</color>-->
+<!--    <color name="colorPrimaryDark">#3700B3</color>-->
+<!--    <color name="colorAccent">#03DAC5</color>-->
+<!--    <color name="color_primary">#6200EE</color>-->
+<!--    <color name="color_primary_dark">#3700B3</color>-->
+
+    <color name="colorPrimary">#e53935</color>
+    <color name="colorPrimaryDark">#b71c1c</color>
+    <color name="colorAccent">#ffdf00</color>
+    <color name="color_primary">#b71c1c</color>
+    <color name="color_primary_dark">#b71c1c</color>
+
+
+    <color name="white">#ffffff</color>
+    <color name="text_gray">#aeb2b3</color>
+    <color name="text_gray2">#a9abad</color>
+    <color name="text_gray3">#6a6a6a</color>
+    <color name="transaction_pending">#ff8200</color>
+    <!--___________________ dialog ___________________-->
+    <color name="dialog_positive_color">#63b8f8</color>
+    <color name="dialog_positive_color_dark">#388dcc</color>
+    <color name="dialog_negative_color">#008071</color>
+    <color name="dialog_negative_color_dark">#008071</color>
+    <color name="error_color">#FFB71C1C</color>
+    <!--___________________ dialog ___________________-->
+
+    <color name="background1_color">#e6e6ea</color>
+    <color name="background_image">#5c5c5c</color>
+    <color name="btn_dark_gray">#434345</color>
+    <color name="btn_dark_gray_pressed">#5c5c5c</color>
+
+    <color name="title_background">#e4e5e7</color>
+    <color name="colorAccent_light">#abfbee</color>
+    <color name="payment_background_color">#32abfc</color>
+
+    <color name="error_msg">#5d5d5d</color>
+
+    <color name="user_selected">#efefef</color>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <color name="text_dark">#5c5c5c</color>
+    <color name="material_green2">#20a69d</color>
+    <color name="black">#000000</color>
+    <color name="order_divider">#e7e7e7</color>
+    <color name="divider_color">#e7e7e7</color>
+    <color name="material_red">#ff4455</color>
+    <color name="material_green">#4caf50</color>
+    <color name="image_bg_gray">#e7e7e7</color>
+    <color name="slider_bg_gray">#696969</color>
+    <color name="object_gray">#7a7a7a</color>
+    <color name="btn_disable">#696969</color>
+    <!--<color name="text_dark_light">#6b6b6b</color>-->
+
+    <color name="material_blue">#00A693</color>
+
+
+
+
+
+
+
+
+
+    <color name="gradient_start_elements">#ff8200</color>
+    <color name="gradient_center_elements">#ff9400</color>
+    <color name="gradient_end_elements">#ffa300</color>
+
+
+    <color name="gradient_start">#0D3E6F</color>
+    <color name="gradient_center">#092c4e</color>
+    <color name="gradient_end">#03274B</color>
+
+    <color name="gradient_start_dark">#E97802</color>
+    <color name="gradient_center_dark">#F0A705</color>
+    <color name="gradient_end_dark">#EEBA02</color>
+
+
+
+
+    <color name="toolbar_btn_color">#c5ccd6</color>
+    <color name="color_notification_bar">#B95E01</color>
+    <color name="ratingbar_color">#E97802</color>
+    <color name="text_dark_light">#7C8A8A8A</color>
+    <color name="disable_white">#BCFFFFFF</color>
+    <color name="current_speed_enable">#32abfc</color>
+</resources>

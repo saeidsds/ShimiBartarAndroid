@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "796492745627",
+    "project_id": "shimibartarnew",
+    "storage_bucket": "shimibartarnew.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:796492745627:android:5f83f359e01afb65acef3e",
+        "android_client_info": {
+          "package_name": "com.multiplatform.shimibartar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "796492745627-0i71bk6fv2lbi2vp46hr1vpk3uqalvf3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA3nvEhnCzptcrxfcvxkyyv8J0APZbeoxs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "796492745627-0i71bk6fv2lbi2vp46hr1vpk3uqalvf3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

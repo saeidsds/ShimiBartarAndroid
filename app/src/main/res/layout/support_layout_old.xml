@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background1_color">
+
+
+    <RelativeLayout
+        android:id="@+id/toolbar_container"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/color_primary"
+            android:theme="@style/AppTheme.AppBarOverlay"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+
+                android:id="@+id/actionbar_tv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:gravity="center"
+                android:text="@string/support"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/main_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar_container">
+
+        <ScrollView
+            android:layout_above="@+id/bottom_bar_container"
+            android:fillViewport="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingBottom="25dp">
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="15dp"
+                    android:minHeight="50dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="6dp"
+                    app:cardElevation="6dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:id="@+id/support_label"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginTop="20dp"
+                            android:gravity="center|center_vertical"
+                            android:autoLink="phone"
+                            android:text="@string/support_desc"
+                            android:textColor="@color/text_dark"
+                            android:textSize="14sp" />
+
+                        <RelativeLayout
+                            android:id="@+id/support_type_btn"
+                            android:layout_width="185dp"
+                            android:layout_height="38dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="30dp"
+                            android:background="@drawable/btn_strock_gray">
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/support_type_tv"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="24dp"
+                                android:layout_marginRight="24dp"
+                                android:gravity="center"
+                                android:text="@string/support_type"
+                                android:textColor="@color/text_dark"
+                                android:textSize="14sp"
+
+                                app:autoSizeMaxTextSize="14sp"
+                                app:autoSizeMinTextSize="6sp"
+                                app:autoSizeStepGranularity="1sp"
+                                app:autoSizeTextType="uniform"
+                                />
+
+                            <ImageView
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="8dp"
+                                android:scaleType="centerInside"
+                                android:src="@drawable/bottom_arrow" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/support_group_btn"
+                            android:layout_width="185dp"
+                            android:layout_height="38dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="15dp"
+                            android:background="@drawable/btn_strock_gray"
+                            android:visibility="gone">
+
+                            <TextView
+                                android:id="@+id/support_group_tv"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:gravity="center"
+                                android:text="@string/group"
+                                android:textColor="@color/text_dark"
+                                android:textSize="14sp" />
+
+                            <ImageView
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="15dp"
+                                android:scaleType="centerInside"
+                                android:src="@drawable/bottom_arrow" />
+
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="25dp"
+                            android:minHeight="50dp">
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginRight="20dp">
+
+                                <EditText
+                                    android:id="@+id/desc_et"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+
+                                    android:gravity="right|center_vertical"
+                                    android:hint="@string/description"
+                                    android:textColor="@color/text_dark"
+                                    android:textColorHint="@color/text_gray"
+                                    android:textSize="14sp" />
+                            </com.google.android.material.textfield.TextInputLayout>
+
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <Button
+                                android:id="@+id/send_btn"
+                                android:layout_width="170dp"
+                                android:layout_height="38dp"
+                                android:layout_centerInParent="true"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="25dp"
+                                android:layout_marginTop="40dp"
+                                android:background="@drawable/btn_background_green"
+                                android:gravity="center"
+                                android:stateListAnimator="@null"
+                                android:text="@string/send_request"
+                                android:textAllCaps="false"
+                                android:textColor="@color/white"
+                                android:textSize="14sp" />
+
+
+                            <RelativeLayout
+                                android:id="@+id/loading_send"
+                                android:layout_width="170dp"
+                                android:layout_height="38dp"
+                                android:layout_centerInParent="true"
+                                android:background="@drawable/btn_background_green"
+                                android:visibility="gone">
+
+                                <com.github.rahatarmanahmed.cpv.CircularProgressView
+                                    android:layout_width="28dp"
+                                    android:layout_height="28dp"
+                                    android:layout_centerInParent="true"
+                                    android:visibility="visible"
+                                    app:cpv_animAutostart="true"
+                                    app:cpv_color="@color/white"
+                                    app:cpv_indeterminate="true"
+                                    app:cpv_progress="50"
+                                    app:cpv_thickness="1.5dp" />
+
+                            </RelativeLayout>
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/support_footer_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center_horizontal"
+                    android:text="@string/support_footer_text"
+                    android:textColor="@color/text_dark_light"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/bottom_bar_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <RelativeLayout
+                android:id="@+id/call_btn"
+                android:layout_width="140dp"
+                android:layout_height="38dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/btn_background_primary_dark">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/contact_developer"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/contact_btn"
+                android:layout_width="140dp"
+                android:layout_height="38dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/btn_background_primary_dark">
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/send_email"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+
+
+
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>

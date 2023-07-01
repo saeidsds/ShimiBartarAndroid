@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#80000000"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"></LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="40dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/dialog_white_bg"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp">
+
+            <RelativeLayout
+                android:id="@+id/title_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="50dp">
+
+                <TextView
+                    android:id="@+id/title_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="false"
+                    android:layout_centerHorizontal="false"
+                    android:layout_centerInParent="false"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="left|right"
+                    android:text=""
+                    android:textColor="@color/text_dark" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/main_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:visibility="visible">
+
+
+                <net.cachapa.expandablelayout.ExpandableLayout
+                    android:id="@+id/expandable_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:el_duration="265"
+                    app:el_expanded="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="15dp"
+                            android:orientation="horizontal">
+
+                            <RelativeLayout
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <com.shawnlin.numberpicker.NumberPicker
+                                    android:id="@+id/type_picker"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:background="@color/white"
+                                    app:np_dividerColor="@color/colorAccent"
+                                    app:np_dividerThickness="1dp"
+                                    app:np_height="180dp"
+                                    app:np_max="59"
+                                    app:np_min="0"
+                                    app:np_selectedTextColor="@color/text_dark"
+                                    app:np_selectedTextSize="15dp"
+                                    app:np_textColor="@color/text_dark"
+                                    app:np_textSize="13dp"
+                                    app:np_value="10"
+                                    app:np_width="64dp" />
+                            </RelativeLayout>
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginBottom="20dp"
+                            android:layout_marginTop="30dp"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+
+                            <RelativeLayout
+                                android:id="@+id/back_btn"
+                                android:layout_width="110dp"
+                                android:layout_height="38dp"
+                                android:layout_marginRight="10dp"
+                                android:background="@drawable/btn_background_red">
+
+                                <TextView
+                                    android:id="@+id/back_tv"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:text="@string/back"
+                                    android:textColor="@color/white"
+                                    android:textSize="14sp" />
+
+
+                            </RelativeLayout>
+
+
+                            <RelativeLayout
+                                android:id="@+id/select_btn"
+                                android:layout_width="110dp"
+                                android:layout_height="38dp"
+                                android:layout_marginLeft="10dp"
+                                android:background="@drawable/btn_background_green">
+
+                                <TextView
+                                    android:id="@+id/select_tv"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:text="@string/select"
+                                    android:textColor="@color/white"
+                                    android:textSize="14sp" />
+
+
+                                <RelativeLayout
+                                    android:id="@+id/loading_select"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/btn_background_green"
+                                    android:visibility="gone">
+
+                                    <Button
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:background="#00000000"
+                                        android:text="" />
+
+                                    <com.github.rahatarmanahmed.cpv.CircularProgressView
+                                        android:layout_width="25dp"
+                                        android:layout_height="25dp"
+                                        android:layout_centerHorizontal="true"
+                                        android:layout_centerVertical="true"
+                                        app:cpv_animAutostart="true"
+                                        app:cpv_color="@color/white"
+                                        app:cpv_indeterminate="true"
+                                        app:cpv_progress="50"
+                                        app:cpv_thickness="1dp" />
+                                </RelativeLayout>
+
+                            </RelativeLayout>
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+
+
+                </net.cachapa.expandablelayout.ExpandableLayout>
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

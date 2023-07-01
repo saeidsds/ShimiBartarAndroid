@@ -1,0 +1,311 @@
+<resources tools:ignore="MissingTranslation" xmlns:tools="http://schemas.android.com/tools">
+
+
+
+
+
+    <string name="default_notification_channel_id">default</string>
+    <string name="app_name">شیمی برتر</string>
+
+
+
+
+
+
+    <!--==========================================================-->
+    <!--==========================================================-->
+    <!--==========================================================-->
+    <!--==========================================================-->
+    <!--==========================================================-->
+    <string name="connection_error">خطا در برقراری ارتباط</string>
+    <string name="programm_error">متاسفانه خطایی در برنامه رخ داده است</string>
+    <string name="error_login">متاسفانه شما عضو سیستم نمیباشید</string>
+    <string name="begin">شروع</string>
+    <string name="profile_mobile">موبایل</string>
+    <string name="description">توضیحات</string>
+    <string name="send_request">ارسال درخواست</string>
+    <string name="group">گروه</string>
+    <string name="send">ارسال</string>
+    <string name="name">نام و نام خانوادگی</string>
+    <string name="sms_code">کد دریافتی</string>
+    <string name="sms_code_desc">لطفا کد دریافتی که برای شما پیامک شده است را وارد کنید</string>
+    <string name="sms_send_desc">لطفا شماره موبایل خود را وارد کنید تا کد فعالسازی برای شما ارسال شود</string>
+    <string name="forgot_pass_desc">لطفا شماره موبایل خود را وارد کنید تا کلمه عبور برای شما ارسال شود</string>
+    <string name="category_title_page">انتخاب گروه آموزشی</string>
+    <string name="back">بازگشت</string>
+    <string name="exit">خروج</string>
+    <string name="forgot_password">فراموشی رمز عبور</string>
+    <string name="forgot_password_title">فراموشی رمز عبور</string>
+    <string name="forgot_password_desc">اگر رمز ورود خود را فراموش کرده اید ، شماره موبایل خود را وارد کنید تا ما کلمه ی عبور را برای شما ارسال کنیم </string>
+    <string name="update_desc">جهت استفاده از اپلیکیشن ، لطفا برنامه ی خود را بروزرسانی کنید</string>
+    <string name="update_title">بروزرسانی</string>
+    <string name="mobile_error">موبایل به صورت صحیح وارد نشده است</string>
+    <string name="login_successfull">شما با موفقیت وارد شدید</string>
+    <string name="send_code">ارسال کد</string>
+    <string name="login">ورود</string>
+    <string name="verify_code">کد فعال سازی</string>
+    <string name="register">ثبت نام</string>
+    <string name="sms_will_be_send">کد فعال سازی از طریق پیامک برای شما ارسال خواهد شد</string>
+    <string name="pass_will_be_send">کلمه عبور از طریق پیامک برای شما ارسال خواهد شد</string>
+    <string name="register_errro">کاربری با این شماره موبایل در سیستم فعال میباشد</string>
+    <string name="code_error">کد وارد شده صحیح نمیباشد</string>
+    <string name="yes">بله</string>
+    <string name="no">خیر</string>
+    <string name="dialog_back_desc">آیا میخواهید خارج شوید ؟</string>
+    <string name="dialog_back_title">خروج</string>
+    <string name="register_successfull">ثبت نام شما با موفقیت انجام شد</string>
+    <string name="next">بعدی</string>
+    <string name="verfication">بررسی</string>
+    <string name="retry">تلاش مجدد</string>
+    <string name="download_percent">درصد</string>
+    <string name="download_pause">دانلود متوقف گردید</string>
+    <string name="file_exist">فایل دانلود شده است</string>
+    <string name="download_complete">فایل با موفقیت دانلود گردید</string>
+    <string name="download_complete_copy">فایل با موفقیت دانلود گردید</string>
+    <string name="profile">حساب کاربری</string>
+    <string name="payment_history">تراکنش ها</string>
+    <string name="support">پشتیبانی</string>
+    <string name="support_shimi_bartar">پشتیبانی شیمی برتر</string>
+    <string name="about">درباره ما</string>
+    <string name="developer">سازنده اپلیکیشن</string>
+    <string name="update_profile">بروزرسانی پروفایل</string>
+    <string name="exit_account_desc">آیا میخواهید از حساب کاربری خود خارج شوید ؟</string>
+    <string name="update_successful">اطلاعات شما با موفقیت بروزرسانی شد</string>
+    <string name="delete">حذف</string>
+    <string name="send_email">ارسال ایمیل</string>
+    <string name="email_error1">متاسفانه برنامه ای جهت ارسال ایمیل وجود ندارد</string>
+    <string name="support_desc">تیم پشتیبانی شیمی برتر در اولین فرصت به درخواست شما رسیدگی خواهد کرد </string>
+    <string name="support_footer_text">هدف ما رضایت شماست</string>
+    <string name="support_type">نوع درخواست</string>
+    <string name="support_send_successful">درخواست شما با موفقیت ارسال شد</string>
+    <string name="title_dialog_support_type">لطفا نوع درخواست خود را مشخص کنید</string>
+    <string name="select">انتخاب</string>
+    <array name="support_types">
+        <item>گزارش خرابی</item>
+        <item>طرح سوال</item>
+        <item>درخواست</item>
+        <item>پیشنهاد</item>
+    </array>
+    <string name="error_support_title">لطفا نوع درخواست خود را مشخص کنید</string>
+    <string name="error_support_desc">لطفا توضیحات خود را بنویسید</string>
+    <string name="contact_developer">تماس با ما</string>
+    <string name="call_developer">این قسمت جهت ارتباط با توسعه دهنده ی برنامه ،  جهت ساخت و تولید اپلیکیشن
+ میباشد ، در صورت نیاز به پشتیبانی صرفا از طریق گزینه پشتیبانی در برنامه اقدام نمایید
+     </string>
+    <string name="developer_continue">ادامه</string>
+    <string name="developer_support">پشتیبانی</string>
+    <string name="developer_cancel">انصراف</string>
+    <string name="day">روز</string>
+    <string name="not_active_on_device">برنامه بر روی دستگاه دیگر فعال میباشد</string>
+    <string name="user_banned">حساب کاربری شما مسدود میباشد</string>
+    <string name="notifications">پیام ها</string>
+    <string name="no_notification_item">متاسفانه پیامی وجود ندارد</string>
+    <string name="time_to_send_sms">لطفا *** ثانیه برای ارسال مجدد صبر کنید</string>
+    <string name="error_size">سایز تصویر کوچک میباشد</string>
+    <string name="loading_please_wait">در حال پردازش . لطفا منتظر بمانید</string>
+    <string name="rotate">چرخش</string>
+    <string name="save">ذخیره</string>
+    <string name="cancel">بازگشت</string>
+    <string name="gallery">گالری</string>
+    <string name="camera">دوربین</string>
+    <string name="error_permission_srorage">دسترسی به فایل ها صادر نشده است</string>
+    <string name="no_format_support">فرمت فایل پشتیبانی نمیشود</string>
+    <string name="delete_image">حذف تصویر</string>
+    <string name="no_data">متاسفانه مطلبی وجود ندارد</string>
+    <string name="more">بیشتر</string>
+    <string name="see">مشاهده</string>
+    <string name="categories">دسته بندی ها</string>
+    <string name="send_sms_again">ارسال مجدد</string>
+    <string name="select_image">انتخاب تصویر</string>
+
+
+
+
+
+
+
+
+
+
+
+
+    <string name="price">قیمت : </string>
+    <string name="payment">پرداخت</string>
+    <string name="title">عنوان</string>
+    <string name="select_category">انتخاب دسته بندی</string>
+    <string name="error_image">تصویر انتخاب نشده است</string>
+    <string name="update">بروزرسانی</string>
+    <string name="logout">خروج از حساب کاربری</string>
+    <string name="exit_account">آیا میخواهید از حساب کاربری خود خارج شوید ؟</string>
+    <string name="accept">تایید</string>
+    <string name="reject">لغو</string>
+    <string name="point">امتیاز</string>
+    <string name="state">وضعیت</string>
+    <string name="no_notification">پیامی وجود ندارد</string>
+    <string name="error_no_permisison">مجوز های لازم صادر نشده است</string>
+    <string name="buy">خرید</string>
+    <string name="no_access">عدم دسترسی</string>
+    <string name="version">ورژن</string>
+    <string name="comment_insert_complete">نظر شما با موفقیت ارسال گردید</string>
+    <string name="comment_not_exist">نظری ثبت نشده است</string>
+    <string name="help">راهنما</string>
+    <string name="terms_and_conditions">قوانین و مقررات برنامه</string>
+    <string name="rate_us_title">به اپلیکیشن ما امتیاز دهید ...</string>
+    <string name="not_now">شاید بعدا</string>
+    <string name="never">هرگز</string>
+    <string name="report_title">گزارش تخلف</string>
+    <string name="report_sent_successful">گزارش شما ثبت گردید</string>
+    <string name="exit_try">برای خروج دوباره کلیک کنید</string>
+    <string name="view">بازدید</string>
+    <string name="toman">تومان</string>
+    <string name="email">ایمیل</string>
+    <string name="location">محل سکونت</string>
+    <string name="dont_have_permission">شما مجوز دسترسی به این بسته آموزشی را ندارید</string>
+    <string name="have_permission">دارای مجوز</string>
+
+
+
+
+
+
+
+<!--    ============================  Custom Strings   ============================  -->
+<!--    ============================  Custom Strings   ============================  -->
+<!--    ============================  Custom Strings   ============================  -->
+<!--    ============================  Custom Strings   ============================  -->
+<!--    ============================  Custom Strings   ============================  -->
+
+
+    <string name="faq">سوال درسی</string>
+    <string name="show_replys">نمایش پاسخ ها</string>
+    <string name="all_comment">نظرات کاربران</string>
+    <string name="welcome_message">عزیز به شیمی برتر خوش آمدی</string>
+    <string name="comment_room">سالن گفت و گو</string>
+    <string name="free">رایگان</string>
+    <string name="select_school_type">لطفا نوع مدرسه خود را انتخاب کنید</string>
+    <string name="school_type">نوع مدرسه</string>
+    <string name="class_type">مقطع کلاس</string>
+    <string name="select_class_type">لطفا مقطع کلاس خود را انتخاب کنید</string>
+    <string name="gender">جنسیت</string>
+    <string name="select_gender">لطفا جنسیت خود را انتخاب کنید</string>
+    <array name="school_type">
+        <item >سمپاد</item>
+        <item>نمونه دولتی</item>
+        <item>غیر انتفاعی</item>
+        <item>دولتی</item>
+    </array>
+    <array name="school_type_id">
+        <item>sampad</item>
+        <item>nemone_dolati</item>
+        <item>qeire_entefae</item>
+        <item>dolati</item>
+    </array>
+
+
+
+
+    <array name="class_type">
+        <item >دهم</item>
+        <item >یازدهم</item>
+        <item >دوازدهم</item>
+        <item >فارغ التحصیل</item>
+        <item >سایر</item>
+    </array>
+    <array name="class_type_id">
+        <item >dahom</item>
+        <item >yazdahom</item>
+        <item >davazdahom</item>
+        <item >fareqotahsil</item>
+        <item >sayer</item>
+    </array>
+
+
+
+
+    <array name="gender">
+        <item >آقا</item>
+        <item >خانم</item>
+    </array>
+    <array name="gender_id">
+        <item >male</item>
+        <item >female</item>
+    </array>
+
+
+    <string name="discount_code">کدهای تخفیف</string>
+    <string name="discount_code2">کد تخفیف</string>
+    <string name="my_discount_code">کدهای تخفیف من</string>
+    <string name="paste">الصاق کد</string>
+    <string name="total_buy">مجموع خرید</string>
+    <string name="share_app">انتشار برنامه</string>
+    <string name="transactions">تراکنش ها</string>
+    <string name="my_package">بسته های خریداری شده</string>
+    <string name="name_error">نام و نام خانوادگی وارد نشده است</string>
+    <string name="school_error">نوع مدرسه مشخص نشده است</string>
+    <string name="gender_error">جنسیت مشخص نشده است</string>
+    <string name="class_error">نوع کلاس مشخص نشده است</string>
+    <string name="location_error">محل سکونت مشخص نشده است</string>
+    <string name="discount_code_copied">کد تخفیف کپی شد</string>
+    <string name="no_discount_item">متاسفانه کد تخفیفی وجود ندارد</string>
+    <string name="no_lesson_item">متاسفانه درسی وجود ندارد</string>
+    <string name="sample_free">فایل نمونه رایگان</string>
+    <string name="video">ویدئو</string>
+    <string name="audio">صوتی</string>
+    <string name="pdf">فایل جزوه</string>
+    <string name="image">تصویر</string>
+    <string name="buyed">خریداری شده</string>
+    <string name="comments">نظرات</string>
+    <string name="reagent_code">دریافت کد تخفیف با ارسال برای دوستان</string>
+    <string name="reagent_code2">کد معرف (اختیاری)</string>
+    <string name="submit">ثبت</string>
+    <string name="submit2">اعمال</string>
+    <string name="error_discount_code">کد تخفیف معتبر نمیباشد</string>
+    <string name="discount_code_accepted">کد تخفیف با موفقیت اعمال گردید</string>
+    <string name="package_list">لیست بسته ها</string>
+    <string name="no_package">متاسفانه بسته آموزشی وجود ندارد</string>
+    <string name="enter">ورود</string>
+    <string name="mathematics">ریاضیات</string>
+    <string name="general">عمومی</string>
+    <string name="special">اختصاصی</string>
+    <string name="chemistry">شیمی</string>
+    <string name="select_question_category_title">انتخاب درس</string>
+    <string name="select_question_category_error1">لطفا بخش مورد نظر را انتخاب نمایید</string>
+    <string name="select_question_category_error2">کاربران با حداقل خرید *** تومان میتوانند به این بخش دسترسی داشته باشند</string>
+    <string name="no_faq_item">متاسفانه سوالی وجود ندارد</string>
+    <string name="my_question">سوالات من</string>
+    <string name="add_question">ارسال سوال</string>
+    <string name="add_question_successful">سوال با موفقیت ارسال شد</string>
+    <string name="question_error">برای ارسال سوال ، لطفا عنوان و متن سوال را وارد نمایید</string>
+    <string name="answer_question">پاسخ  سوال</string>
+    <string name="transaction_id">شناسه</string>
+    <string name="transaction_state_complete">موفق</string>
+    <string name="transaction_state_pending">در انتظار پرداخت</string>
+    <string name="transaction_state_failed">نا موفق</string>
+    <string name="my_transaction">تراکنش های من</string>
+    <string name="please_buy">لطفا بسته آموزشی را خریداری نمایید</string>
+<!--    <string name="share_str">زودآمور به شما کمک میکند تا سریعتر و راحت تر در خانه به اهداف خود در کنکور دست یابید\nشما میتوانید برنامه را از لینک زیر دریافت کنید\n</string>-->
+    <string name="share_str">اپلیکیشن شیمی برتر \nنصب کن ، رایگان آموزش ببین ، جایزه بگیر</string>
+    <string name="morteza_mohammadi">مرتضی محمدی</string>
+    <string name="shimibartar">شیمی برتر</string>
+    <string name="phone_number"></string>
+    <string name="no_transaction">تراکنشی برای مشاهده وجود ندارد</string>
+
+
+
+    <string name="download_dialog_desc">لطفا نحوه نمایش فایل را انتخاب کنید</string>
+    <string name="online_show">پخش آنلاین</string>
+    <string name="download">دانلود</string>
+    <string name="downloading">در حال دانلود...</string>
+    <string name="download_started">دانلود فایل شروع گردید</string>
+    <string name="delete_file">حذف فایل</string>
+    <string name="my_offline_files">گالری آفلاین</string>
+    <string name="speed_setting">تنظیم سرعت :</string>
+    <string name="continue_downloading">ادامه دانلود</string>
+    <string name="stop_downloading">توقف دانلود</string>
+    <string name="reshte">رشته تحصیلی</string>
+    <string name="error_reshte">رشته تحصیلی وارد نشده است</string>
+    <string name="delete_file_desc">آیا میخواهید فایل دانلود شده را از حافظه گوشی همراه خود حذف کنید ؟</string>
+
+
+    <string name="support_list">لیست درخواست های پشتیبانی من</string>
+</resources>

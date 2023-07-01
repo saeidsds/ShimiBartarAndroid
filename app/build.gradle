@@ -1,0 +1,108 @@
+plugins {
+    id 'com.android.application'
+    id 'com.google.gms.google-services'
+    id 'com.google.firebase.crashlytics'
+}
+
+android {
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+    compileSdkVersion 31
+    defaultConfig {
+        applicationId "com.multiplatform.shimibartar"
+        minSdkVersion 19
+        targetSdkVersion 31
+        versionCode 8
+        versionName "1.2.1"
+        multiDexEnabled true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        renderscriptTargetApi 31 //must match target sdk and build tools
+        renderscriptSupportModeEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    ndkVersion '22.1.7171670'
+    namespace 'com.multiplatform.shimibartar'
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+
+    testImplementation 'junit:junit:4.13.2'
+
+
+
+
+//  ========= Stable Custom library
+    implementation project(':bothpulltorefresh')
+    implementation 'com.squareup.okhttp3:okhttp:3.12.0'
+    implementation 'com.google.code.gson:gson:2.10.1'
+    implementation 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
+    //implementation 'androidx.media2:media2-exoplayer:1.0.0-beta01'
+    implementation 'com.google.android.exoplayer:exoplayer:2.16.1'
+    implementation 'com.pnikosis:materialish-progress:1.7'
+    implementation 'com.github.lzyzsd:circleprogress:1.2.1'
+    implementation 'com.github.bumptech.glide:glide:4.14.2'
+    implementation 'com.googlecode.mp4parser:isoparser:1.1.22'
+    implementation 'org.jsoup:jsoup:1.13.1'
+
+
+//  ========= Custom library
+    implementation 'com.github.chrisbanes:PhotoView:2.3.0'
+    implementation 'com.codemybrainsout.rating:ratingdialog:1.0.8'
+    implementation 'me.relex:circleindicator:2.1.6'
+    implementation 'com.nabinbhandari.android:permissions:3.8'
+    implementation 'com.mindorks.android:prdownloader:0.6.0'
+    implementation 'com.chootdev:recycleclick:1.0.0'
+    implementation 'cn.yangbingqiang.android:parallaxviewpager:1.0.1'
+    implementation 'jp.wasabeef:glide-transformations:4.1.0'
+    implementation "com.cleveroad:slidingtutorial:1.0.9"
+    implementation 'net.cachapa.expandablelayout:expandablelayout:2.9.2'
+    implementation 'com.github.rahatarmanahmed:circularprogressview:2.5.0'
+    implementation 'com.github.fuzz-productions:RatingBar:1.0.3'
+    implementation 'com.mikhaellopez:circularimageview:4.2.0'
+    implementation 'com.shawnlin:number-picker:2.4.6'
+    implementation 'com.github.GrenderG:Toasty:1.5.2'
+    implementation 'com.github.developer-shivam:Crescento:1.2.1'
+
+
+//  =========== Google
+    androidTestImplementation 'androidx.test:runner:1.5.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+    implementation 'com.google.android.material:material:1.5.0'
+    implementation 'androidx.appcompat:appcompat:1.4.1'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'androidx.constraintlayout:constraintlayout-solver:2.0.4'
+    implementation 'androidx.multidex:multidex:2.0.1'
+
+//   ========= firebase
+    implementation 'com.google.firebase:firebase-crashlytics:18.3.7'
+    implementation 'com.google.firebase:firebase-analytics:21.3.0'
+    implementation 'com.google.firebase:firebase-core:21.1.1'
+    implementation 'com.google.firebase:firebase-messaging:23.1.2'
+
+
+
+    dependencies {
+        implementation('com.github.ozodrukh:CircularReveal:2.0.1@aar') {
+            transitive = true;
+        }
+    }
+
+}
+
+

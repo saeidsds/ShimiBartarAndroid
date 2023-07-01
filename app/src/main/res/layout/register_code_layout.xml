@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:attribute="http://schemas.android.com/apk/res-auto">
+
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/main_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/order_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <developer.shivam.crescento.CrescentoContainer
+
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="60"
+                android:elevation="20dp"
+                attribute:curvature="0dp">
+
+                <ImageView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/primary_gradiant" />
+
+                <ImageView
+                    android:layout_width="170dp"
+                    android:layout_height="170dp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/logo_white" />
+
+
+            </developer.shivam.crescento.CrescentoContainer>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="40">
+                <ScrollView
+                    android:fillViewport="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginRight="30dp"
+                            android:background="@drawable/btn_background_white"
+                            android:paddingTop="15dp"
+                            android:paddingBottom="15dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="15dp"
+                            android:orientation="vertical">
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <ImageView
+                                    android:paddingBottom="4dp"
+                                    android:layout_marginRight="25dp"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"
+                                    android:src="@drawable/text_field_code_icon"
+                                    android:scaleType="centerInside"
+                                    android:layout_width="28dp"
+                                    android:layout_height="28dp" />
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginBottom="6dp"
+                                    android:layout_marginLeft="23dp"
+                                    android:layout_marginRight="23dp"
+                                    android:layout_marginTop="5dp">
+
+                                    <EditText
+
+                                        android:id="@+id/code_et"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="right|center_vertical"
+                                        android:hint="@string/sms_code"
+
+                                        android:inputType="number"
+                                        android:paddingBottom="17dp"
+
+                                        android:paddingRight="38dp"
+                                        android:paddingEnd="38dp"
+                                        android:textColor="@color/text_dark"
+                                        android:textColorHint="@color/text_gray"
+                                        android:textSize="14sp" />
+                                </com.google.android.material.textfield.TextInputLayout>
+
+                            </RelativeLayout>
+
+
+                            <TextView
+                                android:id="@+id/desc_tv"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentTop="false"
+                                android:layout_centerHorizontal="false"
+                                android:layout_centerInParent="false"
+                                android:layout_centerVertical="true"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="25dp"
+                                android:layout_marginRight="25dp"
+                                android:gravity="right|center"
+                                android:text="@string/sms_code_desc"
+                                android:textColor="@color/text_dark"
+                                android:textSize="14sp" />
+
+
+
+                        </LinearLayout>
+
+
+                        <TextView
+                            android:id="@+id/dialog_error_msg"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentTop="false"
+                            android:layout_centerHorizontal="false"
+                            android:layout_centerInParent="false"
+                            android:layout_centerVertical="true"
+                            android:layout_marginBottom="3dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:textColor="@color/error_color"
+                            android:textSize="12sp"
+                            android:visibility="gone" />
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginTop="30dp"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+
+                            <RelativeLayout
+                                android:id="@+id/retry_sms_btn"
+                                android:layout_width="140dp"
+                                android:layout_height="38dp"
+                                android:layout_marginRight="10dp"
+                                android:background="@drawable/btn_background_red">
+
+                                <TextView
+                                    android:id="@+id/retry_sms_tv"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:text="@string/send_sms_again"
+                                    android:textColor="@color/white"
+                                    android:textStyle="bold"
+                                    android:textSize="14sp" />
+
+                                <RelativeLayout
+                                    android:id="@+id/loading_retry_sms"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/btn_background_red"
+                                    android:visibility="gone">
+
+                                    <Button
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:background="#00000000"
+                                        android:text="" />
+
+                                    <com.github.rahatarmanahmed.cpv.CircularProgressView
+                                        android:layout_width="25dp"
+                                        android:layout_height="25dp"
+                                        android:layout_centerHorizontal="true"
+                                        android:layout_centerVertical="true"
+                                        app:cpv_animAutostart="true"
+                                        app:cpv_color="@color/white"
+                                        app:cpv_indeterminate="true"
+                                        app:cpv_progress="50"
+                                        app:cpv_thickness="1dp" />
+                                </RelativeLayout>
+
+                            </RelativeLayout>
+
+
+                            <RelativeLayout
+                                android:id="@+id/next_btn"
+                                android:layout_width="140dp"
+                                android:layout_height="38dp"
+                                android:layout_marginLeft="10dp"
+                                android:background="@drawable/btn_background_green">
+
+                                <TextView
+                                    android:id="@+id/register_tv"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:text="@string/verfication"
+                                    android:textColor="@color/white"
+                                    android:textStyle="bold"
+                                    android:textSize="14sp" />
+
+                                <RelativeLayout
+                                    android:id="@+id/register_loading"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/btn_background_green"
+                                    android:visibility="gone">
+
+                                    <Button
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:background="#00000000"
+                                        android:text="" />
+
+                                    <com.github.rahatarmanahmed.cpv.CircularProgressView
+                                        android:layout_width="25dp"
+                                        android:layout_height="25dp"
+                                        android:layout_centerHorizontal="true"
+                                        android:layout_centerVertical="true"
+                                        app:cpv_animAutostart="true"
+                                        app:cpv_color="@color/white"
+                                        app:cpv_indeterminate="true"
+                                        app:cpv_progress="50"
+                                        app:cpv_thickness="1dp" />
+                                </RelativeLayout>
+
+
+                            </RelativeLayout>
+                        </LinearLayout>
+
+
+
+                        <TextView
+                            android:id="@+id/time_tv"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentTop="false"
+                            android:layout_centerHorizontal="false"
+                            android:layout_centerInParent="false"
+                            android:layout_centerVertical="true"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginRight="25dp"
+                            android:gravity="center"
+                            android:text=""
+                            android:textColor="@color/text_dark"
+                            android:textSize="14sp" />
+
+
+                    </LinearLayout>
+
+                </ScrollView>
+            </RelativeLayout>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
