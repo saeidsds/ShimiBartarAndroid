@@ -85,6 +85,6 @@ public class PostObject {
 
 
     public String slider_type="";
-    public String slider_post_id = "";
+    public String slider_category_id = "";
 
 }

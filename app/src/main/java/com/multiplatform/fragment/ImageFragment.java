@@ -17,6 +17,7 @@ import com.bumptech.glide.Glide;
 import com.google.gson.Gson;
 import com.multiplatform.helper.MultiplatformHelper;
 import com.multiplatform.shimibartar.PackageActivity;
+import com.multiplatform.shimibartar.PackageInCategoryListActivity;
 import com.multiplatform.shimibartar.R;
 import com.multiplatform.model.PostObject;
 
@@ -63,12 +64,11 @@ public class ImageFragment extends Fragment {
 							intent.putExtra("data",new Gson().toJson(data));
 							startActivity(intent);
 						}
-						else if(data.slider_type.equals("in_app")){
-							PostObject obj = new PostObject();
-							obj.post_id = data.slider_post_id;
-							Intent intent=new Intent(getActivity(), PackageActivity.class);
-							intent.putExtra("data",new Gson().toJson(obj));
-							startActivity(intent);
+						else if(data.slider_type.equals("category")){
+							Intent i =new Intent(getActivity(), PackageInCategoryListActivity.class);
+							i.putExtra("title",data.title);
+							i.putExtra("term_id",data.slider_category_id);
+							startActivity(i);
 						}
 						else{
 							MultiplatformHelper.open_url(getActivity(),data.link_slider);

@@ -220,7 +220,7 @@ public class Parser {
 
 
             try {
-                obj.slider_post_id = jclient.getString("slider_post_id");
+                obj.slider_category_id = jclient.getString("slider_category_id");
             }catch (Exception e){}
 
 
