@@ -336,7 +336,8 @@ public class HomeActivity extends AppCompatActivity  {
             @Override
             public void onClick(View view) {
                 //show_select_question_dialog();
-                Intent intent=new Intent(ctx,QuestionListActivity.class);
+                //Intent intent=new Intent(ctx,QuestionListActivity.class);
+                Intent intent=new Intent(ctx,SupportListActivity.class);
                 intent.putExtra("category_name","general");
                 intent.putExtra("title",getString(R.string.support));
                 startActivity(intent);
@@ -401,10 +402,16 @@ public class HomeActivity extends AppCompatActivity  {
             }
         });
 
+        findViewById(R.id.question_btn).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(ctx, QuestionListActivity.class));
+            }
+        });
         findViewById(R.id.support_btn).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(ctx, SupportActivityOld.class));
+                startActivity(new Intent(ctx, SupportActivity.class));
             }
         });
 

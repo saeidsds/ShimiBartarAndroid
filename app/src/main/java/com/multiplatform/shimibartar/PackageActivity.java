@@ -182,8 +182,8 @@ public class PackageActivity extends AppCompatActivity {
         findViewById(R.id.support_btn).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //startActivity(new Intent(ctx,SupportActivityOld.class));
-                Intent intent=new Intent(ctx,QuestionListActivity.class);
+                //startActivity(new Intent(ctx,AddSupportActivity.class));
+                Intent intent=new Intent(ctx,SupportListActivity.class);
                 intent.putExtra("category_name","general");
                 intent.putExtra("title",getString(R.string.support));
                 startActivity(intent);

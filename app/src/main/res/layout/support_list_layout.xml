@@ -40,6 +40,24 @@
 
             </androidx.appcompat.widget.Toolbar>
 
+            <androidx.appcompat.widget.AppCompatTextView
+
+                android:layout_alignParentEnd="true"
+                android:id="@+id/add_support_tv"
+                android:layout_width="wrap_content"
+                android:layout_marginEnd="15dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/add_direct"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:lines="1"
+                app:autoSizeTextType="uniform"
+                app:autoSizeMaxTextSize="16sp"
+                app:autoSizeStepGranularity="1sp"/>
+
         </RelativeLayout>
 
     </RelativeLayout>

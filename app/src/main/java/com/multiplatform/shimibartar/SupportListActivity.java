@@ -77,7 +77,12 @@ public class SupportListActivity extends AppCompatActivity {
         adapter.temp_view = listview ;
         listview.setAdapter(adapter);
 
-
+        findViewById(R.id.add_support_tv).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(ctx,AddSupportActivity.class));
+            }
+        });
         error_msg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

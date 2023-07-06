@@ -269,6 +269,49 @@
                         android:textSize="14sp" />
                 </RelativeLayout>
 
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:background="@color/background1_color"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_height="1dp" />
+
+
+                <RelativeLayout
+                    android:id="@+id/question_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:minHeight="45dp">
+
+                    <ImageView
+                        android:id="@+id/support_icon"
+                        android:layout_width="27dp"
+                        android:layout_height="27dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:padding="3dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/question_icon2" />
+
+                    <TextView
+                        android:id="@+id/question_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="47dp"
+                        android:gravity="right|center_vertical"
+                        android:text="@string/question"
+                        android:textColor="@color/text_dark"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
                 <ImageView
                     android:layout_width="match_parent"
                     android:background="@color/background1_color"

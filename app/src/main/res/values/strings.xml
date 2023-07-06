@@ -273,6 +273,8 @@
     <string name="select_question_category_error2">کاربران با حداقل خرید *** تومان میتوانند به این بخش دسترسی داشته باشند</string>
     <string name="no_faq_item">متاسفانه سوالی وجود ندارد</string>
     <string name="my_question">سوالات من</string>
+    <string name="add_direct">ارسال دایرکت</string>
+    <string name="question">پرسش و پاسخ</string>
     <string name="add_question">ارسال سوال</string>
     <string name="add_question_successful">سوال با موفقیت ارسال شد</string>
     <string name="question_error">برای ارسال سوال ، لطفا عنوان و متن سوال را وارد نمایید</string>

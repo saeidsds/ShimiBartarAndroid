@@ -43,7 +43,7 @@ import okhttp3.Request;
 import okhttp3.RequestBody;
 import okhttp3.Response;
 
-public class SupportActivityOld extends AppCompatActivity {
+public class AddSupportActivity extends AppCompatActivity {
 
 
     SharedPreferences sp ;
@@ -60,7 +60,7 @@ public class SupportActivityOld extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.support_layout_old);
+        setContentView(R.layout.add_support_layout);
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);

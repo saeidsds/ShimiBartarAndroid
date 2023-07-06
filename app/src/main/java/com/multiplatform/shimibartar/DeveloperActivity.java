@@ -345,7 +345,7 @@ public class DeveloperActivity extends AppCompatActivity {
                         break;
                     case DialogInterface.BUTTON_NEUTRAL:
                         dialog.dismiss();
-                        startActivity(new Intent(ctx, SupportActivityOld.class));
+                        startActivity(new Intent(ctx, AddSupportActivity.class));
                         break;
                 }
             }
