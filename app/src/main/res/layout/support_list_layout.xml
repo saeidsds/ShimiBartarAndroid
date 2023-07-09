@@ -40,24 +40,6 @@
 
             </androidx.appcompat.widget.Toolbar>
 
-            <androidx.appcompat.widget.AppCompatTextView
-
-                android:layout_alignParentEnd="true"
-                android:id="@+id/add_support_tv"
-                android:layout_width="wrap_content"
-                android:layout_marginEnd="15dp"
-                android:layout_height="match_parent"
-                android:gravity="center"
-                android:text="@string/add_direct"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:textStyle="bold"
-                android:textColor="@color/white"
-                android:textSize="16sp"
-                android:lines="1"
-                app:autoSizeTextType="uniform"
-                app:autoSizeMaxTextSize="16sp"
-                app:autoSizeStepGranularity="1sp"/>
-
         </RelativeLayout>
 
     </RelativeLayout>
@@ -76,6 +58,7 @@
         <com.orangegangsters.github.swipyrefreshlayout.library.SwipyRefreshLayout
 
             android:id="@+id/swipyrefreshlayout"
+            android:layout_above="@+id/add_support_tv"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginTop="0dp"
@@ -114,6 +97,17 @@
             android:textStyle="bold"
             android:visibility="visible" />
 
+        <TextView
+            android:text="@string/add_direct"
+            android:background="@color/color_primary_dark"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:id="@+id/add_support_tv"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"/>
 
     </RelativeLayout>
 

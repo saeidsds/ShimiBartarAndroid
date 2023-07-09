@@ -29,6 +29,8 @@ import com.orangegangsters.github.swipyrefreshlayout.library.SwipyRefreshLayoutD
 import org.json.JSONArray;
 import org.json.JSONObject;
 
+import java.util.Collection;
+import java.util.Collections;
 import java.util.LinkedList;
 import java.util.concurrent.TimeUnit;
 
@@ -115,13 +117,13 @@ public class SupportActivity extends AppCompatActivity {
                 {
                     if(direction== SwipyRefreshLayoutDirection.TOP)
                     {
-                        new comment_asynctask("0").execute();
+                        String temp=mlist.size()+"";
+                        new comment_asynctask(""+temp).execute();
                     }
                     else
                     {
-                        //String temp=mlist.get(mlist.size()-1).post_id;
-                        String temp=mlist.size()+"";
-                        new comment_asynctask(""+temp).execute();
+                        new comment_asynctask("0").execute();
+
                     }
                 }
             }
@@ -270,6 +272,7 @@ public class SupportActivity extends AppCompatActivity {
 
             refreshing=false;
             refresh_layout.setRefreshing(false);
+
             refresh_layout.post(new Runnable() {
                 @Override
                 public void run() {
@@ -299,7 +302,7 @@ public class SupportActivity extends AppCompatActivity {
                     obj.comment_date  = data.date;
                     obj.comment_content  = data.content;
 
-                    mlist.add(obj);
+                    //mlist.addFirst(obj);
                     adapter.mList=mlist;
                     adapter.notifyDataSetChanged();
 
@@ -311,22 +314,15 @@ public class SupportActivity extends AppCompatActivity {
 
                 if(id.equals("0"))
                 {
+                    Collections.reverse(temp_array);
                     mlist.clear();
-                    CommentObject obj = new CommentObject();
-                    obj.user_id  = sp.getString("user_id","");
-                    obj.comment_ID  = "0";
-                    obj.comment_author  = sp.getString("name","");
-                    obj.comment_date  = data.date;
-                    obj.comment_content  = data.content;
-                    mlist.add(obj);
+                    mlist.addAll(temp_array);
+                }else{
+                    for (int i=0;i<temp_array.size();i++)
+                        mlist.addFirst(temp_array.get(i));
                 }
 
 
-
-                for(int i=0;i<temp_array.size();i++)
-                {
-                    mlist.add(temp_array.get(i));
-                }
                 adapter.mList=mlist;
                 adapter.notifyDataSetChanged();
 
@@ -334,6 +330,16 @@ public class SupportActivity extends AppCompatActivity {
                 {
                     //show_msg(getString(R.string.comment_not_exist));
                 }
+
+                if(id.equals("0")){
+                    listview.post(new Runnable() {
+                        @Override
+                        public void run() {
+                            listview.setSelection(adapter.getCount() - 1);
+                        }
+                    });
+                }
+
 
             }
             adapter.notifyDataSetChanged();

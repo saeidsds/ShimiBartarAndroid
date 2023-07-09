@@ -411,7 +411,7 @@ public class HomeActivity extends AppCompatActivity  {
         findViewById(R.id.support_btn).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(ctx, SupportActivity.class));
+                startActivity(new Intent(ctx, SupportListActivity.class));
             }
         });
 
