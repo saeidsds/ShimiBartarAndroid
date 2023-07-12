@@ -30,6 +30,7 @@ class ListviewHolder {
     public TextView post_title2;
     public TextView replays_btn;
     public TextView replays_btn2;
+    public View indicator;
 
 
      public ListviewHolder(View base) {
@@ -50,6 +51,7 @@ class ListviewHolder {
          post_title2 =  base.findViewById(R.id.post_title_tv2);
          replays_btn =  base.findViewById(R.id.replays_btn);
          replays_btn2 =  base.findViewById(R.id.replays_btn2);
+         indicator =  base.findViewById(R.id.indicator);
 
      }  
      

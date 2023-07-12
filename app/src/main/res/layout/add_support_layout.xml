@@ -204,8 +204,8 @@
                                 android:layout_height="38dp"
                                 android:layout_centerInParent="true"
                                 android:layout_gravity="center"
-                                android:layout_marginBottom="25dp"
                                 android:layout_marginTop="40dp"
+                                android:layout_marginBottom="25dp"
                                 android:background="@drawable/btn_background_green"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
@@ -258,63 +258,7 @@
 
         </ScrollView>
 
-        <LinearLayout
-            android:id="@+id/bottom_bar_container"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginBottom="10dp"
-            android:gravity="center"
-            android:orientation="horizontal">
 
-
-            <RelativeLayout
-                android:id="@+id/call_btn"
-                android:layout_width="140dp"
-                android:layout_height="38dp"
-                android:layout_marginRight="10dp"
-                android:background="@drawable/btn_background_primary_dark">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="center"
-                    android:gravity="center"
-                    android:text="@string/contact_developer"
-                    android:textColor="@color/white"
-                    android:textSize="14sp"
-                    android:textStyle="bold" />
-
-
-
-            </RelativeLayout>
-
-
-            <RelativeLayout
-                android:id="@+id/contact_btn"
-                android:layout_width="140dp"
-                android:layout_height="38dp"
-                android:layout_marginLeft="10dp"
-                android:background="@drawable/btn_background_primary_dark">
-
-                <TextView
-
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="center"
-                    android:gravity="center"
-                    android:text="@string/send_email"
-                    android:textColor="@color/white"
-                    android:textSize="14sp"
-                    android:textStyle="bold" />
-
-
-
-
-            </RelativeLayout>
-        </LinearLayout>
     </RelativeLayout>
 
 

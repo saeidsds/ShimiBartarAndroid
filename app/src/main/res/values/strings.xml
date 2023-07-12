@@ -23,7 +23,7 @@
     <string name="begin">شروع</string>
     <string name="profile_mobile">موبایل</string>
     <string name="description">توضیحات</string>
-    <string name="send_request">ارسال درخواست</string>
+    <string name="send_request">ارسال دایرکت</string>
     <string name="group">گروه</string>
     <string name="send">ارسال</string>
     <string name="name">نام و نام خانوادگی</string>
@@ -64,7 +64,7 @@
     <string name="download_complete_copy">فایل با موفقیت دانلود گردید</string>
     <string name="profile">حساب کاربری</string>
     <string name="payment_history">تراکنش ها</string>
-    <string name="support">دایرکت</string>
+    <string name="support">دایرکت شیمی برتر</string>
     <string name="support_shimi_bartar">دایرکت شیمی برتر</string>
     <string name="about">درباره ما</string>
     <string name="developer">سازنده اپلیکیشن</string>
@@ -81,10 +81,11 @@
     <string name="title_dialog_support_type">لطفا نوع درخواست خود را مشخص کنید</string>
     <string name="select">انتخاب</string>
     <array name="support_types">
-        <item>گزارش خرابی</item>
-        <item>طرح سوال</item>
-        <item>درخواست</item>
-        <item>پیشنهاد</item>
+        <item>مشاوره خرید پکیج و درس</item>
+        <item>مشاوره ثبت نام کلاس</item>
+        <item>خرید کتاب و جزوه</item>
+        <item>گزارش اشکالات اپ</item>
+        <item>موارد متفرقه</item>
     </array>
     <string name="error_support_title">لطفا نوع درخواست خود را مشخص کنید</string>
     <string name="error_support_desc">لطفا توضیحات خود را بنویسید</string>
@@ -310,4 +311,5 @@
 
 
     <string name="support_list">لیست دایرکت های من</string>
+    <string name="new_answered">پاسخ جدید</string>
 </resources>

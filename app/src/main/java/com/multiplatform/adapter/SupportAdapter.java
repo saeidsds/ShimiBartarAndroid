@@ -12,6 +12,8 @@ import android.widget.Filter;
 import android.widget.Toast;
 
 
+import androidx.core.content.ContextCompat;
+
 import com.multiplatform.helper.Constant;
 import com.multiplatform.helper.MPDateHelper;
 import com.multiplatform.helper.MultiplatformHelper;
@@ -107,10 +109,18 @@ public  class SupportAdapter extends BaseAdapter  {
 
 
 
-         viewHolder1.item1_tv.setText(mList.get(position).title);
+
          viewHolder1.item2_tv.setText(mList.get(position).content);
          viewHolder1.date_tv.setText(MPDateHelper.miladi_to_shamsi(mList.get(position).date).persian_date);
 
+         if(mList.get(position).is_answered.equals("1") || mList.get(position).is_answered.equals("true"))
+         {
+             viewHolder1.item1_tv.setText(mList.get(position).title+"("+ctx.getString(R.string.new_answered)+")");
+             viewHolder1.item1_tv.setTextColor(ContextCompat.getColor(ctx,R.color.color_primary_dark));
+         }else{
+             viewHolder1.item1_tv.setTextColor(ContextCompat.getColor(ctx,R.color.text_dark));
+             viewHolder1.item1_tv.setText(mList.get(position).title);
+         }
 
          return v;
           

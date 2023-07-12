@@ -447,13 +447,19 @@ public class SupportListActivity extends AppCompatActivity {
     @Override
     protected void onResume() {
         super.onResume();
-        ctx.registerReceiver(mMessageReceiver, new IntentFilter("notification_message"));
+        //ctx.registerReceiver(mMessageReceiver, new IntentFilter("notification_message"));
+        if(sp.getBoolean("reload_support",false))
+        {
+            spe.putBoolean("reload_support",false).apply();
+            new asynctask_getdate(0).execute();
+        }
+
     }
 
     @Override
     protected void onPause() {
         super.onPause();
-        ctx.unregisterReceiver(mMessageReceiver);
+        //ctx.unregisterReceiver(mMessageReceiver);
     }
 
 

@@ -18,6 +18,7 @@ public class GeneralObject {
 
     public String date="";
     public String state="";
+    public String is_answered="";
 
 
 }

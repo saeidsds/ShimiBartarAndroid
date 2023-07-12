@@ -100,36 +100,9 @@ public class AddSupportActivity extends AppCompatActivity {
         });
 
 
-        findViewById(R.id.call_btn).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                try {
-                    Intent callIntent = new Intent(Intent.ACTION_DIAL);
-                    callIntent.setData(Uri.parse("tel:05138117"));
-                    callIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                    startActivity(callIntent);
-                } catch (Exception e) {
-                    // TODO: handle exception
-                }
-            }
-        });
 
-        findViewById(R.id.contact_btn).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i = new Intent(Intent.ACTION_SEND);
-                i.setType("message/rfc822");
-                i.putExtra(Intent.EXTRA_EMAIL  , new String[]{Constant.email});
-                i.putExtra(Intent.EXTRA_SUBJECT, "");
-                i.putExtra(Intent.EXTRA_TEXT   , "");
-                try {
 
-                    startActivity(Intent.createChooser(i, ""));
-                } catch (android.content.ActivityNotFoundException ex) {
-                    Toast.makeText(ctx, getString(R.string.email_error1), Toast.LENGTH_SHORT).show();
-                }
-            }
-        });
+
 
     }
 
@@ -225,6 +198,7 @@ public class AddSupportActivity extends AppCompatActivity {
             else if(error==0)
             {
                 show_toast(ctx.getString(R.string.support_send_successful),"green");
+                spe.putBoolean("reload_support",true).apply();
                 finish();
             }
 
@@ -327,7 +301,7 @@ public class AddSupportActivity extends AppCompatActivity {
             }
         });
 
-
+        type_picker.setValue(1);
 
 
 

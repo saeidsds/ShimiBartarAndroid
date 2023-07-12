@@ -104,8 +104,11 @@ public class SupportActivity extends AppCompatActivity {
         });
 
 
-
-
+        if(data.is_answered.equals("1") || data.is_answered.equals("true"))
+        {
+            spe.putBoolean("reload_support",true).apply();
+            new answered_asynctask().execute();
+        }
 
 
 
@@ -166,7 +169,13 @@ public class SupportActivity extends AppCompatActivity {
 
     //======================================================================
 
-
+    public class answered_asynctask extends NewAsyncTask<Boolean, Boolean, Boolean> {
+        @Override
+        protected Boolean doInBackground(Boolean... params) {
+            String temp=postRequest("28","");
+            return true;
+        }
+    }
 
     public class comment_asynctask extends NewAsyncTask<Boolean, Boolean, Boolean> {
 
@@ -461,7 +470,10 @@ public class SupportActivity extends AppCompatActivity {
                 show_msg(error_string,true,"red");
             }
             else
+            {
                 show_msg(error_string,true,"green");
+                new comment_asynctask("0").execute();
+            }
 
 
 

@@ -373,6 +373,10 @@ public class Parser {
                         obj.date = jclient.getString("date");
                     }catch (Exception e){}
 
+                    try {
+                        obj.is_answered = jclient.getString("is_answered");
+                    }catch (Exception e){}
+
                 }catch (Exception e){}
                 if(obj!=null)
                     temp_array.add(obj);
