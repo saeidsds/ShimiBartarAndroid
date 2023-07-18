@@ -613,14 +613,17 @@ public class PackageActivity extends AppCompatActivity {
         ((TextView)findViewById(R.id.toolbar_title_tv)).setSelected(true);
         ((TextView)findViewById(R.id.duration_tv)).setText(data.durations);
         ((TextView)findViewById(R.id.title_tv)).setSelected(true);
-
+        String discount_str = "";
+        if(!data.price_discount.equals("") && !data.price_discount.equals("0")){
+            discount_str  = "(-"+data.price_discount+")";
+        }
         ((TextView)findViewById(R.id.price_prev_tv)).setText(MultiplatformHelper.get_price(data.price_prev)+" "+ctx.getString(R.string.toman));
         ((TextView)findViewById(R.id.price_prev_tv)).setPaintFlags(((TextView)findViewById(R.id.price_prev_tv)).getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG);
         if(data.package_type.equals("free") || data.price_prev.equals("0")|| data.price_prev.equals(""))
             ((TextView)findViewById(R.id.price_prev_tv)).setVisibility(View.GONE);
 
         if(!data.package_type.equals("free"))
-            ((TextView)findViewById(R.id.price_tv)).setText(getString(R.string.buy)+"( "+MultiplatformHelper.get_price(data.price)+" "+getString(R.string.toman)+" )");
+            ((TextView)findViewById(R.id.price_tv)).setText(getString(R.string.buy)+"( "+MultiplatformHelper.get_price(data.price)+discount_str+" "+getString(R.string.toman)+" )");
         if(have_permission)
             ((TextView)findViewById(R.id.buy_tv)).setText(getString(R.string.have_permission));
         else

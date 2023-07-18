@@ -110,13 +110,16 @@ public  class PackageAdapter extends BaseAdapter  {
          Glide.with(ctx).load(mList.get(position).image).into(viewHolder1.image);
          viewHolder1.price_prev_tv.setText(MultiplatformHelper.get_price(mList.get(position).price_prev)+" "+ctx.getString(R.string.toman));
          viewHolder1.price_prev_tv.setPaintFlags(viewHolder1.price_prev_tv.getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG);
-
+         String discount_str = "";
+         if(!mList.get(position).price_discount.equals("") && !mList.get(position).price_discount.equals("0")){
+             discount_str  = "(-"+mList.get(position).price_discount+")";
+         }
          if(mList.get(position).package_type.equals("free")) {
              viewHolder1.price_tv.setText(ctx.getString(R.string.free));
              viewHolder1.price_tv.setTextColor(ContextCompat.getColor(ctx,R.color.material_green));
              viewHolder1.price_prev_tv.setVisibility(View.GONE);
          }else {
-             viewHolder1.price_tv.setText(MultiplatformHelper.get_price(mList.get(position).price)+" "+ctx.getString(R.string.toman));
+             viewHolder1.price_tv.setText(MultiplatformHelper.get_price(mList.get(position).price)+discount_str+" "+ctx.getString(R.string.toman));
              viewHolder1.price_tv.setTextColor(ContextCompat.getColor(ctx,R.color.material_green));
 
              if(mList.get(position).price_prev.equals("")  || mList.get(position).price_prev.equals("0")){

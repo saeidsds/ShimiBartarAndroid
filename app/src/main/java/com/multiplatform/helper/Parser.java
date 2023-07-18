@@ -203,6 +203,12 @@ public class Parser {
 
             try {
                 obj.price_prev = jclient.getString("price_prev");
+                try {
+                    double price = Double.valueOf(obj.price);
+                    double price_prev = Double.valueOf(obj.price_prev);
+                    double discount = 100*price_prev/price;
+                    obj.price_discount = ((int)discount)+"";
+                }catch (Exception e2){}
             }catch (Exception e){}
 
 

@@ -37,6 +37,7 @@ public class PostObject {
     
     public String price="0";
     public String price_prev="0";
+    public String price_discount="";
 
     
     public String durations="";

@@ -55,7 +55,10 @@ public class HomePackageAdapter extends RecyclerView.Adapter<RecycleHolder> {
         Glide.with(ctx).load(mList.get(position).image).into(holder.image);
         holder.title.setText(mList.get(position).title);
         holder.title.setSelected(true);
-
+        String discount_str = "";
+        if(!mList.get(position).price_discount.equals("") && !mList.get(position).price_discount.equals("0")){
+            discount_str  = "(-"+mList.get(position).price_discount+")";
+        }
         holder.price_prev.setText(MultiplatformHelper.get_price(mList.get(position).price_prev)+" "+ctx.getString(R.string.toman));
         holder.price_prev.setPaintFlags(holder.price_prev.getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG);
 
@@ -64,7 +67,7 @@ public class HomePackageAdapter extends RecyclerView.Adapter<RecycleHolder> {
             holder.price.setTextColor(ContextCompat.getColor(ctx,R.color.material_green));
             holder.price_prev.setVisibility(View.GONE);
         }else {
-            holder.price.setText(MultiplatformHelper.get_price(mList.get(position).price)+" "+ctx.getString(R.string.toman));
+            holder.price.setText(MultiplatformHelper.get_price(mList.get(position).price)+discount_str+" "+ctx.getString(R.string.toman));
             holder.price.setTextColor(ContextCompat.getColor(ctx,R.color.material_green));
             if(mList.get(position).price_prev.equals("") || mList.get(position).price_prev.equals("0")){
                 holder.price_prev.setVisibility(View.GONE);
