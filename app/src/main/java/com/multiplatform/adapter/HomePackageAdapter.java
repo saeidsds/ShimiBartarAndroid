@@ -57,7 +57,7 @@ public class HomePackageAdapter extends RecyclerView.Adapter<RecycleHolder> {
         holder.title.setSelected(true);
         String discount_str = "";
         if(!mList.get(position).price_discount.equals("") && !mList.get(position).price_discount.equals("0")){
-            discount_str  = "(-"+mList.get(position).price_discount+")";
+            discount_str  = "("+mList.get(position).price_discount+"%-)";
         }
         holder.price_prev.setText(MultiplatformHelper.get_price(mList.get(position).price_prev)+" "+ctx.getString(R.string.toman));
         holder.price_prev.setPaintFlags(holder.price_prev.getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG);

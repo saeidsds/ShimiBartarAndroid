@@ -112,7 +112,7 @@ public  class PackageAdapter extends BaseAdapter  {
          viewHolder1.price_prev_tv.setPaintFlags(viewHolder1.price_prev_tv.getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG);
          String discount_str = "";
          if(!mList.get(position).price_discount.equals("") && !mList.get(position).price_discount.equals("0")){
-             discount_str  = "(-"+mList.get(position).price_discount+")";
+             discount_str  = "("+mList.get(position).price_discount+"%-)";
          }
          if(mList.get(position).package_type.equals("free")) {
              viewHolder1.price_tv.setText(ctx.getString(R.string.free));
