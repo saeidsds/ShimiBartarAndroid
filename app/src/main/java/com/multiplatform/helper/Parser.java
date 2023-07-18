@@ -206,8 +206,8 @@ public class Parser {
                 try {
                     double price = Double.valueOf(obj.price);
                     double price_prev = Double.valueOf(obj.price_prev);
-                    double discount = 100*(price_prev-price)/price;
-                    obj.price_discount = ((int)discount)+"";
+                    double discount = 100*(price_prev-price)/price_prev;
+                    //obj.price_discount = ((int)discount)+"";
                 }catch (Exception e2){}
             }catch (Exception e){}
 

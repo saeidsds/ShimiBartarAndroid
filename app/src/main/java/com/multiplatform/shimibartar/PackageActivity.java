@@ -615,7 +615,7 @@ public class PackageActivity extends AppCompatActivity {
         ((TextView)findViewById(R.id.title_tv)).setSelected(true);
         String discount_str = "";
         if(!data.price_discount.equals("") && !data.price_discount.equals("0")){
-            discount_str  = "("+data.price_discount+"%-)";
+            discount_str  = "("+data.price_discount+"%)";
         }
         ((TextView)findViewById(R.id.price_prev_tv)).setText(MultiplatformHelper.get_price(data.price_prev)+" "+ctx.getString(R.string.toman));
         ((TextView)findViewById(R.id.price_prev_tv)).setPaintFlags(((TextView)findViewById(R.id.price_prev_tv)).getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG);
